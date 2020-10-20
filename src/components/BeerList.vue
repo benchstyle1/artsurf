@@ -2,7 +2,7 @@
   <div class="beer__list list">
     <BeerItem
       v-for="(beerItem, index) in beer"
-      :key="index"
+      :key="beerItem.id"
       :itemData="beerItem"
       :index="index"
     />

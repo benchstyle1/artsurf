@@ -16,7 +16,7 @@ export default new Vuex.Store({
   mutations: {
     fetchNextPage(state) {
       state.page += 1;
-      this.commit("setButtonText", "loading");
+      this.commit("setButtonText","loading");
       this.dispatch("fetchData");
     },
     saveFetchedData(state, payload) {
@@ -34,7 +34,6 @@ export default new Vuex.Store({
   },
   actions: {
     fetchData(ctx) {
-      console.log(ctx.state.page);
       Axios.get(
         "https://api.punkapi.com/v2/beers?page=" +
           ctx.state.page +

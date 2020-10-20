@@ -21,8 +21,8 @@ import style from "@/assets/style/Details.css"
 export default {
   computed: {
     ...mapGetters(["beer"]),
-    itemData: function() {
-      return this.beer.filter(el => el.id == this.$route.params.id)[0];
+    itemData: function() {  
+      return this.beer.find(item => item.id == this.$route.params.id)
     }
   }
 };
