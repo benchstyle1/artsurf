@@ -1,0 +1,8 @@
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination > button {
+  display: block;
+  margin: 0 auto;
+}

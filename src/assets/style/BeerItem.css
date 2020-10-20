@@ -1,0 +1,41 @@
+.item {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.item > img {
+  width: 50px;
+  height: 100px;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 0;
+  overflow: hidden;
+}
+
+.info > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info > h4 {
+  text-align: center;
+}
+
+.actions {
+  margin: 10px auto 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions a {
+  color: black;
+}
